@@ -1,0 +1,18 @@
+[
+  {
+    "id": "design_001",
+    "title": "Neon Drip Genesis",
+    "price": 4500, 
+    "image": "/mockups/design_001.png", 
+    "printUrl": "https://your-r2-bucket.com/designs/design_001_printfile.png",
+    "description": "The first drop. 100% Cotton. Unique 1/1 print."
+  },
+  {
+    "id": "design_002",
+    "title": "Abstract Void",
+    "price": 4500,
+    "image": "/mockups/design_002.png",
+    "printUrl": "https://your-r2-bucket.com/designs/design_002_printfile.png",
+    "description": "Minimalist chaos. Heavyweight tee."
+  }
+]
