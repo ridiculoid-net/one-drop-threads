@@ -1,11 +1,11 @@
 [
   {
-    "id": "design_001",
-    "title": "Neon Drip Genesis",
-    "price": 4500,
-    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=2000&h=2000&fit=crop",
-    "description": "The first drop. 100% Cotton. Unique 1/1 print with vibrant neon colors."
+    "id": "blueberries",
+    "title": "blueberries",
+    "price": 2800,
+    "image": "https://cdn.ridiculoid.net/mockups/blueberries.png",
+    "printUrl": "https://cdn.ridiculoid.net/mockups/blueberries.png",
+    "description": "people helping people"
   },
   {
     "id": "design_002",

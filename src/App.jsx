@@ -348,7 +348,7 @@ export default function App() {
       <footer className="border-t border-gray-200 dark:border-gray-800 py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © 2024 One Drop Threads. Each design destroyed after first purchase.
+            © 2025 One Drop Threads. Each design destroyed after first purchase.
           </p>
         </div>
       </footer>
