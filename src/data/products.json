@@ -2,17 +2,73 @@
   {
     "id": "design_001",
     "title": "Neon Drip Genesis",
-    "price": 4500, 
-    "image": "/mockups/design_001.png", 
-    "printUrl": "https://your-r2-bucket.com/designs/design_001_printfile.png",
-    "description": "The first drop. 100% Cotton. Unique 1/1 print."
+    "price": 4500,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=2000&h=2000&fit=crop",
+    "description": "The first drop. 100% Cotton. Unique 1/1 print with vibrant neon colors."
   },
   {
     "id": "design_002",
     "title": "Abstract Void",
     "price": 4500,
-    "image": "/mockups/design_002.png",
-    "printUrl": "https://your-r2-bucket.com/designs/design_002_printfile.png",
-    "description": "Minimalist chaos. Heavyweight tee."
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=2000&h=2000&fit=crop",
+    "description": "Minimalist chaos. Heavyweight tee with abstract geometric design."
+  },
+  {
+    "id": "design_003",
+    "title": "Cosmic Bloom",
+    "price": 4800,
+    "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=2000&h=2000&fit=crop",
+    "description": "Ethereal design meets street wear. Premium cotton blend."
+  },
+  {
+    "id": "design_004",
+    "title": "Digital Decay",
+    "price": 4500,
+    "image": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=2000&h=2000&fit=crop",
+    "description": "Glitch aesthetic. Premium fabric with distressed digital print."
+  },
+  {
+    "id": "design_005",
+    "title": "Sunset Overdrive",
+    "price": 5000,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-503342217505-b0a15ec3261c?w=2000&h=2000&fit=crop",
+    "description": "Vibrant gradients. Limited edition oversized fit."
+  },
+  {
+    "id": "design_006",
+    "title": "Midnight Rider",
+    "price": 4500,
+    "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=2000&h=2000&fit=crop",
+    "description": "Dark elegance. Oversized fit with premium screen print."
+  },
+  {
+    "id": "design_007",
+    "title": "Urban Jungle",
+    "price": 4700,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=2000&h=2000&fit=crop",
+    "description": "Nature meets concrete. Bold botanical print on premium cotton."
+  },
+  {
+    "id": "design_008",
+    "title": "Retro Wave",
+    "price": 4600,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=2000&h=2000&fit=crop",
+    "description": "80s inspired synthwave aesthetic. Heavyweight vintage feel."
+  },
+  {
+    "id": "design_009",
+    "title": "Monochrome Dreams",
+    "price": 4500,
+    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&h=1000&fit=crop",
+    "printUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=2000&h=2000&fit=crop",
+    "description": "Classic black and white. Timeless design on premium fabric."
   }
 ]
