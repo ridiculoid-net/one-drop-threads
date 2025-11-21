@@ -8,20 +8,20 @@
     "description": "people helping people"
   },
   {
-    "id": "design_002",
-    "title": "Abstract Void",
-    "price": 4500,
-    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=2000&h=2000&fit=crop",
-    "description": "Minimalist chaos. Heavyweight tee with abstract geometric design."
+    "id": "oxes_pyramid",
+    "title": "oxes pyramid",
+    "price": 2800,
+    "image": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/oxes_pyramid2.png",
+    "printUrl": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/oxes_pyramid2.png",
+    "description": "oxes on boxes #baltimore"
   },
   {
-    "id": "design_003",
-    "title": "Cosmic Bloom",
-    "price": 4800,
-    "image": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=2000&h=2000&fit=crop",
-    "description": "Ethereal design meets street wear. Premium cotton blend."
+    "id": "dinossauro",
+    "title": "dinossauro",
+    "price": 2800,
+    "image": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/dinossauro.png",
+    "printUrl": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/dinossauro.png",
+    "description": "gostoso dino"
   },
   {
     "id": "design_004",
