@@ -3,68 +3,52 @@ import Stripe from 'stripe';
 export async function onRequestPost(context) {
   const stripe = new Stripe(context.env.STRIPE_SECRET_KEY);
   const { request, env } = context;
-  
+  const body = await request.json();
+  const { designId, size, title, price, printUrl } = body;
+
+  // 1. Double Check Availability (Race Condition Protection)
+  const status = await env.DB_KV.get(designId);
+  if (status === 'sold') {
+    return new Response(JSON.stringify({ error: 'Sorry, this item just sold!' }), { status: 400 });
+  }
+
+  // 2. Create Stripe Session
   try {
-    const body = await request.json();
-    const { priceId, designId, size, printUrl } = body;
-
-    // ⭐ KEY PART: Check if already sold
-    const status = await env.DB_KV.get(designId);
-    if (status === 'sold') {
-      return new Response(JSON.stringify({ 
-        error: 'Sorry! This design just sold out. It was truly 1 of 1.' 
-      }), { 
-        status: 400,
-        headers: { 'Content-Type': 'application/json' }
-      });
-    }
-
-    // Create checkout with Stripe Product Price
     const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
       line_items: [{
-        price: priceId,  // ← Your Stripe Price ID
+        price_data: {
+          currency: 'usd',
+          product_data: {
+            name: `${title} (Size: ${size})`,
+            images: [printUrl], // Use mock image or printUrl
+            metadata: {
+                designId: designId,
+                one_of_one: "true"
+            }
+          },
+          unit_amount: price,
+        },
         quantity: 1,
       }],
       mode: 'payment',
-      
-      // Pass important data to webhook
+      // Pass vital info to webhook via metadata
       metadata: {
         designId: designId,
         size: size,
-        printUrl: printUrl
+        printUrl: printUrl // Used to fulfill order
       },
-      
-      success_url: `${new URL(request.url).origin}/?success=true&design=${designId}`,
+      success_url: `${new URL(request.url).origin}/?success=true`,
       cancel_url: `${new URL(request.url).origin}/`,
-      
       shipping_address_collection: {
-        allowed_countries: ['US', 'CA', 'GB', 'AU', 'NZ'],
+        allowed_countries: ['US', 'CA', 'GB'], // Add your shipping zones
       },
     });
 
     return new Response(JSON.stringify({ url: session.url }), {
       headers: { 'Content-Type': 'application/json' }
     });
-
   } catch (err) {
-    console.error('Checkout error:', err);
-    return new Response(JSON.stringify({ 
-      error: err.message || 'Failed to create checkout' 
-    }), { 
-      status: 500,
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
   }
-}
-
-// CORS support
-export async function onRequestOptions() {
-  return new Response(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    }
-  });
 }

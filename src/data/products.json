@@ -3,27 +3,10 @@
     "id": "blueberries",
     "title": "blueberries",
     "price": 2800,
-    "image": "/mockups/design_001.jpg",
-    "printUrl": "/printfiles/design_001_print.png",
-    "description": "The first drop. 100% Cotton. Unique 1/1 print.",
-    "stripePrices": {
-      "S": "price_1SW42RGWPJa8ftHnxxsKKwKc_S",
-      "M": "price_1SW42RGWPJa8ftHnxxsKKwKc_M",
-      "L": "price_1SW42RGWPJa8ftHnxxsKKwKc_L",
-      "XL": "price_1SW42RGWPJa8ftHnxxsKKwKc_XL",
-      "2XL": "price_1SW42RGWPJa8ftHnxxsKKwKc_2XL",
-      "3XL": "price_1SW42RGWPJa8ftHnxxsKKwKc_3XL"
-    },
-    "printful": {
-      "variant_ids": {
-        "S": 4012,
-        "M": 4013,
-        "L": 4014,
-        "XL": 4015,
-        "2XL": 4016
-      }
-    }
-  }},
+    "image": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/blueberries.png",
+    "printUrl": "https://pub-c64ec0c71abd4f4892a66e896fbf954f.r2.dev/mockups/blueberries.png",
+    "description": "people helping people"
+  },
   {
     "id": "oxes_pyramid",
     "title": "oxes pyramid",
