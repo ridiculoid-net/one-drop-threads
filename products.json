@@ -1,0 +1,15 @@
+[
+  {
+    "id": "my-design",
+    "name": "My Design",
+    "description": "",
+    "priceCents": 2800,
+    "currency": "usd",
+    "image": "/images/my-design.jpg",
+    "storeProductId": 403839395,
+    "printFileUrl": "",
+    "sizeMap": {
+      "M": 21311
+    }
+  }
+]
