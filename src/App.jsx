@@ -70,7 +70,8 @@ const ProductModal = ({ product, isOpen, onClose }) => {
           size: size,
           printUrl: product.printUrl,
           title: product.title,
-          price: product.price
+          price: product.price,
+          sizeMap: product.sizeMap
         }),
       });
       
