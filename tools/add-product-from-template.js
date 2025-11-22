@@ -93,14 +93,13 @@ async function main() {
   const productsJsonPath = path.join(process.cwd(), "src", "data", "products.json");
   const productObject = {
     id: slug,
-    name,
+    title: name,  // App uses 'title' not 'name'
     description: "",
-    priceCents,
-    currency: "usd",
+    price: priceCents,  // App uses 'price' not 'priceCents'
     image: imagePublicPath,
-    // Not strictly needed for Store API based flow, but useful metadata
+    printUrl: imagePublicPath,  // Used for print file
+    // Metadata
     storeProductId,
-    printFileUrl: "",
     sizeMap: sizeVariantMap, // e.g. { S: 12345, M: 12346, L: 12347, XL: 12348 }
   };
 
@@ -253,4 +252,4 @@ async function appendProduct(productsJsonPath, productObject) {
 main().catch((err) => {
   console.error(err);
   process.exit(1);
-})
+});
