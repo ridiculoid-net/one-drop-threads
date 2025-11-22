@@ -97,7 +97,7 @@ async function main() {
     description: "",
     price: priceCents,  // App uses 'price' not 'priceCents'
     image: imagePublicPath,
-    printUrl: imagePublicPath,  // Used for print file
+    printUrl: mockupUrl,  // Use original Printful URL for printing
     // Metadata
     storeProductId,
     sizeMap: sizeVariantMap, // e.g. { S: 12345, M: 12346, L: 12347, XL: 12348 }
