@@ -135,5 +135,30 @@
       "L": 20676,
       "XL": 20674
     }
+  },
+  {
+    "id": "csc-mugshot",
+    "title": "CSC Mugshot",
+    "description": "Creative expression. Wearable art.",
+    "price": 2800,
+    "image": "/images/csc-mugshot.jpg",
+    "printUrl": "https://files.cdn.printful.com/printfile-preview/906152558/9a8b1d5ef87108418c7a3307e241bfce_preview.png",
+    "storeProductId": 403849648,
+    "sizeMap": {
+      "S": 8923,
+      "M": 8924,
+      "L": 8925,
+      "XL": 8926
+    }
+  },
+  {
+    "id": "unisex-t-shirt",
+    "title": "Unisex t-",
+    "description": "Urban aesthetic. Limited availability.",
+    "price": 2800,
+    "image": "/images/unisex-t-shirt.jpg",
+    "printUrl": "https://files.cdn.printful.com/printfile-preview/906152545/fb03711cfbd330e855dab856d6042240_preview.png",
+    "storeProductId": 403849642,
+    "sizeMap": {}
   }
 ]
