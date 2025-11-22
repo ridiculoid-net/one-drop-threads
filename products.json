@@ -11,5 +11,18 @@
     "sizeMap": {
       "M": 21311
     }
+  },
+  {
+    "id": "heartskuildroid",
+    "name": "Heartskuildroid",
+    "description": "",
+    "priceCents": 2800,
+    "currency": "usd",
+    "image": "/images/heartskuildroid.jpg",
+    "storeProductId": 403839395,
+    "printFileUrl": "",
+    "sizeMap": {
+      "M": 21311
+    }
   }
 ]
