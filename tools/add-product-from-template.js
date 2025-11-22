@@ -89,8 +89,8 @@ async function main() {
   console.log("Downloading mockup to:", imagePath);
   await downloadFile(mockupUrl, imagePath);
 
-  // 4) Append product entry to products.json
-  const productsJsonPath = path.join(process.cwd(), "products.json");
+  // 4) Append product entry to src/data/products.json
+  const productsJsonPath = path.join(process.cwd(), "src", "data", "products.json");
   const productObject = {
     id: slug,
     name,
@@ -253,4 +253,4 @@ async function appendProduct(productsJsonPath, productObject) {
 main().catch((err) => {
   console.error(err);
   process.exit(1);
-});
+})
