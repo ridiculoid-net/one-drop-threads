@@ -4,12 +4,14 @@
 //
 // Usage example:
 //   node tools/add-product-from-template.js \
+//     --store-id 17262304 \
 //     --product-id 123456 \
 //     --slug one-drop-midnight-grid \
 //     --name "Midnight Grid" \
 //     --price 4200
 //
 // Notes:
+// - --store-id is your Printful store ID (17262304)
 // - --product-id is the Printful *store product ID*
 //   (visible under each product name in your Printful store).
 // - PRINTFUL_TOKEN must be set in your .env
@@ -30,13 +32,14 @@ async function main() {
   const storeProductId = Number(
     args["product-id"] || args["store-product-id"] || args["template-id"]
   );
+  const storeId = args["store-id"] || "";
   const slug = String(args.slug || "");
   const name = String(args.name || "");
   const priceCents = Number(args.price || 4200);
 
-  if (!storeProductId || !slug || !name) {
+  if (!storeProductId || !slug || !name || !storeId) {
     console.error(
-      'Usage: node tools/add-product-from-template.js --product-id 123456 --slug one-drop-midnight-grid --name "Midnight Grid" --price 4200'
+      'Usage: node tools/add-product-from-template.js --store-id 17262304 --product-id 123456 --slug one-drop-midnight-grid --name "Midnight Grid" --price 4200'
     );
     process.exit(1);
   }
@@ -49,7 +52,7 @@ async function main() {
 
   // 1) Look up store product details (variants, thumbnail, etc.)
   console.log("Fetching store product details for ID:", storeProductId);
-  const storeProduct = await fetchStoreProduct(storeProductId, token);
+  const storeProduct = await fetchStoreProduct(storeProductId, storeId, token);
 
   // Build S/M/L/XL → variant_id map from sync_variants[]
   const sizeVariantMap = buildSizeMapFromStoreProduct(storeProduct);
@@ -123,8 +126,8 @@ function parseArgs(argv) {
   return out;
 }
 
-async function fetchStoreProduct(productId, token) {
-  const res = await fetch(`${API_BASE}/store/products/${productId}`, {
+async function fetchStoreProduct(productId, storeId, token) {
+  const res = await fetch(`${API_BASE}/store/products/${productId}?store_id=${storeId}`, {
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
