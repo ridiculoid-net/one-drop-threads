@@ -2,10 +2,17 @@
   {
     "id": "blueberries",
     "title": "blueberries",
+    "description": "Bold design. Limited edition print.",
     "price": 2800,
-    "image": "https://cdn.ridiculoid.net/mockups/blueberries.png?w=800&h=1000&fit=crop",
-    "printUrl": "https://cdn.ridiculoid.net/mockups/blueberries.png?w=2000&h=2000&fit=crop",
-    "description": "people helping people"
+    "image": "/images/blueberries.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/479/479381be5e1790aab39f216ea0bc0ed7_preview.png",
+    "storeProductId": 403839389,
+    "sizeMap": {
+      "S": 20680,
+      "M": 20678,
+      "L": 20676,
+      "XL": 20674
+    }
   },
   {
     "id": "oxes_pyramid",
@@ -26,51 +33,19 @@
   {
     "id": "birdman",
     "title": "birdman",
+    "description": "Urban aesthetic. Limited availability.",
     "price": 2800,
-    "image": "https://cdn.ridiculoid.net/mockups/birdman.png?w=800&h=1000&fit=crop",
-    "printUrl": "https://cdn.ridiculoid.net/mockups/birdman.png?w=2000&h=2000&fit=crop",
-    "description": "ol' birdman jenkins"
+    "image": "/images/birdman.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/a95/a9510473f678d80caaf2524e7b333325_preview.png",
+    "storeProductId": 403839404,
+    "sizeMap": {
+      "S": 4131,
+      "M": 4132,
+      "L": 4133,
+      "XL": 4134
+    }
   },
-  {
-    "id": "design_005",
-    "title": "Sunset Overdrive",
-    "price": 5000,
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-503342217505-b0a15ec3261c?w=2000&h=2000&fit=crop",
-    "description": "Vibrant gradients. Limited edition oversized fit."
-  },
-  {
-    "id": "design_006",
-    "title": "Midnight Rider",
-    "price": 4500,
-    "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=2000&h=2000&fit=crop",
-    "description": "Dark elegance. Oversized fit with premium screen print."
-  },
-  {
-    "id": "design_007",
-    "title": "Urban Jungle",
-    "price": 4700,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=2000&h=2000&fit=crop",
-    "description": "Nature meets concrete. Bold botanical print on premium cotton."
-  },
-  {
-    "id": "design_008",
-    "title": "Retro Wave",
-    "price": 4600,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=2000&h=2000&fit=crop",
-    "description": "80s inspired synthwave aesthetic. Heavyweight vintage feel."
-  },
-  {
-    "id": "design_009",
-    "title": "Monochrome Dreams",
-    "price": 4500,
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&h=1000&fit=crop",
-    "printUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=2000&h=2000&fit=crop",
-    "description": "Classic black and white. Timeless design on premium fabric."
-  },
+  
   {
     "id": "heartskuildroid",
     "title": "Heartskuildroid",
@@ -81,6 +56,101 @@
     "storeProductId": 403839395,
     "sizeMap": {
       "M": 21311
+    }
+  },
+  {
+    "id": "rafaelly",
+    "title": "rafaelly",
+    "description": "Distinctive style. Rare piece.",
+    "price": 2800,
+    "image": "/images/rafaelly.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/e3d/e3d3a08db9f74d5fe0c6d713692d4b8c_preview.png",
+    "storeProductId": 403839413,
+    "sizeMap": {
+      "M": 4162
+    }
+  },
+  {
+    "id": "whale",
+    "title": "whale",
+    "description": "Unique artwork. One-time drop.",
+    "price": 2800,
+    "image": "/images/whale.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/fb7/fb716c363e4340b8333a50602a39033c_preview.png",
+    "storeProductId": 403839410,
+    "sizeMap": {
+      "M": 4027
+    }
+  },
+  {
+    "id": "crescentcat",
+    "title": "crescentCat",
+    "description": "Distinctive style. Rare piece.",
+    "price": 2800,
+    "image": "/images/crescentcat.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/d99/d99f7aaf34c8196f549387540c04ef00_preview.png",
+    "storeProductId": 403839407,
+    "sizeMap": {
+      "M": 24353
+    }
+  },
+  {
+    "id": "oxes-pyramid",
+    "title": "oxes pyramid",
+    "description": "Distinctive style. Rare piece.",
+    "price": 2800,
+    "image": "/images/oxes-pyramid.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/9a7/9a74ccfcdb39a5868ab81189691e7a46_preview.png",
+    "storeProductId": 403839403,
+    "sizeMap": {
+      "S": 4011,
+      "M": 4012,
+      "L": 4013,
+      "XL": 4014
+    }
+  },
+  {
+    "id": "pumpkin",
+    "title": "pumpkin",
+    "description": "Eye-catching graphics. Premium comfort.",
+    "price": 2800,
+    "image": "/images/pumpkin.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/a70/a70ecd077e862af2a2c27fb3bfa58696_preview.png",
+    "storeProductId": 403839400,
+    "sizeMap": {
+      "M": 14715
+    }
+  },
+  {
+    "id": "ufopizza",
+    "title": "ufopizza",
+    "description": "Urban aesthetic. Limited availability.",
+    "price": 2800,
+    "image": "/images/ufopizza.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/396/3960094d59585a7bae03fe36b6ca790c_preview.png",
+    "storeProductId": 403839398,
+    "sizeMap": {}
+  },
+  {
+    "id": "jimmy",
+    "title": "jimmy",
+    "description": "Stand out from the crowd.",
+    "price": 2800,
+    "image": "/images/jimmy.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/bc2/bc2f14dadca955d7bac28bc1dbf05184_preview.png",
+    "storeProductId": 403839397,
+    "sizeMap": {}
+  },
+  {
+    "id": "capybara",
+    "title": "capybara",
+    "description": "Distinctive style. Rare piece.",
+    "price": 2800,
+    "image": "/images/capybara.jpg",
+    "printUrl": "https://files.cdn.printful.com/files/02b/02b451dd8acd8fcf71f90853538f0d37_preview.png",
+    "storeProductId": 403839392,
+    "sizeMap": {
+      "M": 22288
     }
   }
 ]
