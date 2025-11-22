@@ -210,18 +210,29 @@ function extractSizeFromName(name) {
 }
 
 function pickMockupUrl(storeProduct) {
-  if (storeProduct.sync_product?.thumbnail_url) {
-    return storeProduct.sync_product.thumbnail_url;
-  }
-
   const syncVariants = storeProduct.sync_variants || [];
+  
+  // Collect all available preview URLs from all variants (different colors/angles)
+  const allPreviews = [];
+  
   for (const variant of syncVariants) {
     const files = variant.files || [];
     for (const f of files) {
       if (f.preview_url) {
-        return f.preview_url;
+        allPreviews.push(f.preview_url);
       }
     }
+  }
+
+  // If we found multiple previews, pick a random one
+  if (allPreviews.length > 0) {
+    const randomIndex = Math.floor(Math.random() * allPreviews.length);
+    return allPreviews[randomIndex];
+  }
+
+  // Fallback to thumbnail if no previews found
+  if (storeProduct.sync_product?.thumbnail_url) {
+    return storeProduct.sync_product.thumbnail_url;
   }
 
   return null;
