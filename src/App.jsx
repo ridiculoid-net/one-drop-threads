@@ -9,7 +9,7 @@ const Navbar = ({ darkMode, setDarkMode }) => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
       <div className="flex items-center gap-3">
         <img 
-          src="logo.png" 
+          src="/logo.png" 
           alt="One Drop Threads Logo" 
           className="w-8 h-8 object-contain"
         />
